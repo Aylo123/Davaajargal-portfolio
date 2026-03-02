@@ -1,0 +1,84 @@
+/* ===== PROJECTS SECTION ===== */
+
+.projects-section {
+  padding: 80px 24px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.projects-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: white;
+}
+
+/* ===== GRID ===== */
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+/* ===== CARD ===== */
+
+.project-card {
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 18px;           
+  padding: 28px;                     
+  border: 1px solid rgba(185, 35, 225, 0.3);  
+  transition: transform 0.3s ease, border 0.3s ease;
+  backdrop-filter: blur(12px);
+}
+
+/* hover cyber glow */
+
+.project-card:hover {
+  transform: translateY(-6px);
+  border-color: #b923e1;
+  box-shadow: 0 0 18px rgba(185, 35, 225, 0.4);
+}
+
+/* ===== TEXT ===== */
+
+.project-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.project-desc {
+  color: #b9b9d1;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 768px) {
+  .projects-title {
+    font-size: 26px;
+  }
+
+  .project-card {
+    padding: 18px;
+  }
+}
+.project-btn {
+  margin-top: 16px;
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: 1px solid #b923e1;
+  color: #c4b5fd;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+.project-btn:hover {
+  transform: translateY(-6px);
+  border-color: #b923e1;
+}

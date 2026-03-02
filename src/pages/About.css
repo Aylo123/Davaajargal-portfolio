@@ -1,0 +1,140 @@
+.about {
+  min-height: 100vh;
+  padding: 120px 0;
+  color: #ffffff;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 80px;
+  align-items: start;
+}
+
+/* ================= LEFT ================= */
+
+.about-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-left: 2px solid rgba(185, 35, 225, 0.4);
+  padding-left: 25px;
+}
+
+.about-avatar {
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(185, 35, 225, 0.7);
+  box-shadow: 0 0 40px rgba(185, 35, 225, 0.4);
+  transition: 0.3s ease;
+}
+
+.about-avatar:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 60px rgba(185, 35, 225, 0.8);
+}
+
+.about-left h2 {
+  font-size: 42px;
+  margin-top: 15px;
+}
+
+.about-name {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.about-role {
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #b923e1;
+}
+
+.about-description {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #d0d0d0;
+  max-width: 520px;
+}
+
+/* ================= RIGHT ================= */
+
+.about-right {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.about-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  padding: 28px;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(6px);
+}
+
+.about-card:hover {
+  transform: translateY(-6px);
+  border-color: #b923e1;
+  box-shadow: 0 0 25px rgba(185, 35, 225, 0.3);
+}
+
+.about-card h3 {
+  font-size: 20px;
+  margin-bottom: 18px;
+}
+
+/* Two column list */
+
+
+.about-card li {
+  font-size: 15px;
+  color: #cccccc;
+  line-height: 1.6;
+}
+
+.about-card p {
+  font-size: 15px;
+  color: #cccccc;
+  line-height: 1.7;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+  .about-container {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .about-avatar {
+    width: 160px;
+    height: 160px;
+  }
+
+.two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px 40px;
+}
+
+.two-column li {
+  list-style: none;
+  position: relative;
+  padding-left: 18px;
+}
+
+.two-column li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #b923e1;
+}
+}

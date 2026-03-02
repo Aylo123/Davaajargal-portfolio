@@ -1,0 +1,68 @@
+.contact-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(2, 6, 23, 0.75);
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.contact-modal {
+  background: radial-gradient(circle at top, #1e1b4b, #020617);
+  border: 1px solid rgba(124, 58, 237, 0.4);
+  border-radius: 20px;
+
+  width: 92%;
+  max-width: 700px;      /* ⬅️ ТОМРУУЛСАН */
+  padding: 40px 44px;   /* ⬅️ Дотор зайг нэмсэн */
+
+  position: relative;
+  color: white;
+}
+
+
+.contact-modal h2 {
+  margin-bottom: 20px;
+}
+
+.contact-modal input,
+.contact-modal textarea {
+  width: 100%;
+  background: transparent;
+  border: 1px solid rgba(124, 58, 237, 0.4);
+  border-radius: 10px;
+    padding: 14px 16px;   /* ⬅️ илүү тухтай */
+  font-size: 15px;
+  color: white;
+}
+
+.form-row {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.contact-modal textarea {
+  height: 120px;
+  margin-bottom: 16px;
+}
+
+.contact-modal button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #7c3aed, #ec4899);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.close-btn {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  cursor: pointer;
+  font-size: 18px;
+}

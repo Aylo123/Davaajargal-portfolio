@@ -1,0 +1,49 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+}
+
+html, body {
+  width: 100%;
+}
+
+/* ROOT BACKGROUND (routing-д хамгийн найдвартай) */
+#root {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #141421, #07070c);
+  color: white;
+}
+
+/* GLOBAL ELEMENTS */
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* TYPEWRITER (optional) */
+.typewriter {
+  overflow: hidden;
+  border-right: 0.15em solid #8B5CF6;
+  white-space: nowrap;
+  width: 0;
+  animation: typing 3s steps(20, end) forwards,
+             blink-caret 0.75s step-end 4;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 15ch; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: #8B5CF6; }
+}
+
