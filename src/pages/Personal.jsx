@@ -1,4 +1,4 @@
-import "./personal.css";
+import "./Personal.css";
 import { useTranslation } from "react-i18next";
 
 const Personal = () => {
